@@ -1,0 +1,56 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "backend teszt",
+    "dateExported": "2023-06-01T16:51:34.115Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3820a887-b003-49b8-a1f0-a161d6977865",
+            "colId": "834b5346-83fa-4da3-88d7-52f6ba1a2894",
+            "containerId": "",
+            "name": "get",
+            "url": "http://localhost:5000/api/ingatlan",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-01T16:27:22.991Z",
+            "modified": "2023-06-01T16:30:47.972Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5348b236-6664-4872-bf4b-d34ffadf936f",
+            "colId": "834b5346-83fa-4da3-88d7-52f6ba1a2894",
+            "containerId": "",
+            "name": "POST",
+            "url": "http://localhost:5000/api/ingatlan",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-01T16:45:43.190Z",
+            "modified": "2023-06-01T16:46:40.939Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"_id\": 200,\n    \"kategoria\": {\n      \"_id\": 2,\n      \"nev\": \"Lakás\"\n    },\n    \"leiras\": \"Kétszintes berendezett lakás a belvárosban kiadó.\",\n    \"hirdetesDatuma\": \"2022-02-24T00:00:00.000Z\",\n    \"tehermentes\": true,\n    \"ar\": 32000000,\n    \"kepUrl\": \"http://localhost:3000/adv03.jpg\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e7890b84-31ff-4d10-9ca5-6639af42e7cf",
+            "colId": "834b5346-83fa-4da3-88d7-52f6ba1a2894",
+            "containerId": "",
+            "name": "Delete",
+            "url": "http://localhost:5000/api/ingatlan/200",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-06-01T16:49:30.335Z",
+            "modified": "2023-06-01T16:49:49.930Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

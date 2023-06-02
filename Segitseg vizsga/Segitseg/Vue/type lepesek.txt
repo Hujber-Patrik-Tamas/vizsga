@@ -1,0 +1,68 @@
+1. mappa-cmd kiadasa
+2. npm i 
+3. st tab (startMongoDB.bat)    elinditasa (ne zard be)
+
+---- todo ----
+
+
+4.fk -- idegen kulcs (nyillal össze van kötve)
+5.be lepek az src/controller --- atirni
+required - kötelező
+unique - egyedi
+default: new Date(),   Ha nem kerül megadásra adat akkor ez fog megjelenni (itt pl a mai datum)
+type: Boolean,  logikai valtotzo
+
+6. forrasok
+7. Ctrl + h filed1 et kicserélni tablazat 1. sorara
+8. majd a többi sort a táblázat alapjan at irni
+9. n oldalit be masolni a json-ből
+10. new terminal
+11. forras/mongo.bat ban át irni 6.0-ra
+12. cd forrasok
+13.  .\mongo.bat
+14. Thunder Client letöltése
+15. villam ikon     collections     nyil    newcollections      nev megadasa        ...     new request     pl(get) metódus
+
+terminal Ctrl shift b 
+
+be irni http://localhost:5000/api/ingatlan
+
+
+ha hiba üzetet kell irni akkor: controller/nside      alt gr + 7
+
+pl:
+ private create = async (req: Request, res: Response) => {
+        try {
+            const body = req.body;
+            const createdDocument = new this.nsideM({
+                ...body,
+            });
+            await createdDocument.save();
+            res.status(201).json({ _id: createdDocument._id });
+        } catch (error) {
+            res.status(400).send({ message: `Hiányos adat` });
+        }
+    };
+
+
+
+16. POST -- uj dolgot kell rögziteni
+villam jel 
+new request
+POST
+valami adatot ki masolni a getből 
+az id at irni
+
+
+17. delete metódus atirasa a hibauzenetet
+http://localhost:5000/api/ingatlan/(id)
+
+18. exportálás
+...
+export
+nev megadása
+
+
+
+törölni a felesleges függvényeket a nside-ban
+nodemodulst is törölni kell
